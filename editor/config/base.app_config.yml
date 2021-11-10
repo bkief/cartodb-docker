@@ -13,8 +13,8 @@ defaults: &defaults
   tiler:
     internal:
       protocol: http
-      domain:   cartodb-mapsapi
-      host:     cartodb-mapsapi
+      domain:   localhost
+      host:     localhost
     private: &routing_defaults
       protocol: http
       domain:   ${PUBLIC_HOST}
@@ -27,7 +27,7 @@ defaults: &defaults
     public:
       <<: *routing_defaults
   redis:
-    host: cartodb-redis
+    host: localhost
   org_metadata_api:
     host: ${PUBLIC_HOST}
   layer_opts:

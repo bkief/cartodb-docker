@@ -2,9 +2,9 @@ module.exports = {
   host: '0.0.0.0',
   user_from_host: '^([^\\.]+)\\.',
   postgres: {
-    host: 'cartodb-postgis',
+    host: 'localhost',
   },
   redis: {
-    host: 'cartodb-redis',
+    host: 'localhost',
   },
 };
